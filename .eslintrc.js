@@ -1,7 +1,7 @@
 module.exports = {
   parser: "@typescript-eslint/parser", //Typescript esLint parser has to be used for the esLint parser
   parserOptions: {
-    ecmaVersion: 2020, //This is the version of ECMAScript that we are using.
+    ecmaVersion: 2022, //This is the version of ECMAScript that we are using.
     sourceType: "module", //Allows us to use import and export statements.
   },
   settings: {
@@ -18,7 +18,6 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:jsx-a11y/recommended",
     "plugin:eslint-comments/recommended",
-    "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
   ],
   rules: {
@@ -30,4 +29,4 @@ module.exports = {
     "react/react-in-jsx-scope": "off", //if return type is not explicit defined
     "@typescript-eslint/explicit-module-boundary-types": "off",
   },
-};
+}
